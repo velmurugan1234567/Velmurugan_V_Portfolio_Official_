@@ -1,0 +1,205 @@
+/* ===== BASE ===== */
+.about-container {
+  background: #020c1b;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===== HERO SECTION ===== */
+.about-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.about-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00ffcc;
+  box-shadow: 0 0 25px rgba(0,255,204,0.5);
+}
+
+.about-intro h1 {
+  font-size: 32px;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.about-intro h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.about-degree {
+  font-size: 18px;
+  color: #4a6cf7;
+  font-weight: 600;
+}
+
+/* ===== SECTION COMMON ===== */
+.about-section {
+  padding: 70px 10%;
+  text-align: center;
+}
+
+.about-section.dark {
+  background: #0a192f;
+}
+
+.about-section h2 {
+  font-size: 32px;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.9;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ===== EDUCATION / CARDS ===== */
+.education-cards,
+.cert-cards,
+.skills-container,
+.intern-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* ===== CARD COMMON STYLE ===== */
+.edu-card,
+.cert-card,
+.skill-card,
+.intern-card {
+  background: rgba(255,255,255,0.08);
+  padding: 22px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.edu-card:hover,
+.cert-card:hover,
+.skill-card:hover,
+.intern-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0,255,204,0.4);
+}
+
+/* Sizes */
+.edu-card { width: 230px; }
+.cert-card { width: 280px; }
+.skill-card { width: 260px; }
+.intern-card { width: 520px; }
+
+/* Text */
+.cert-card h3,
+.skill-card h3,
+.edu-card h3,
+.intern-card h3 {
+  color: #00ffcc;
+  margin-bottom: 8px;
+}
+
+.intern-card h4 {
+  color: #4a6cf7;
+  margin-bottom: 10px;
+}
+
+/* Project list */
+.project-list {
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  opacity: 0.9;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Laptop (1024px) */
+@media (max-width: 1024px) {
+  .about-hero {
+    gap: 40px;
+    padding: 60px 8%;
+  }
+
+  .about-section {
+    padding: 60px 8%;
+  }
+
+  .intern-card {
+    width: 100%;
+  }
+}
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-intro h2 {
+    font-size: 24px;
+  }
+
+  .about-section h2 {
+    font-size: 26px;
+  }
+
+  .edu-card,
+  .cert-card,
+  .skill-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* Mobile (480px) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 50px 6%;
+  }
+
+  .about-intro h1 {
+    font-size: 26px;
+  }
+
+  .about-intro h2 {
+    font-size: 22px;
+  }
+
+  .about-degree {
+    font-size: 16px;
+  }
+
+  .about-profile-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .about-section p {
+    font-size: 14px;
+  }
+}

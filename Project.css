@@ -1,0 +1,103 @@
+.project-container {
+  min-height: 100vh;
+  padding: 60px 10%;
+  background: radial-gradient(circle at center, #0a192f, #020c1b);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-heading {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #00ffcc;
+}
+
+/* Grid */
+.project-grid {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card */
+.project-card {
+  width: 320px;
+  padding: 25px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 20px rgba(74,108,247,0.2);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0,255,204,0.4);
+}
+
+.project-card h2 {
+  color: #00ffcc;
+  font-size: 20px;
+}
+
+.project-card h4 {
+  color: #4a6cf7;
+  margin-bottom: 10px;
+}
+
+.summary {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Features */
+.features h5 {
+  color: #00ffcc;
+  margin-bottom: 5px;
+}
+
+.features ul {
+  padding-left: 18px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Technologies */
+.tech {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.tech span {
+  color: #00ffcc;
+  margin-left: 5px;
+}
+
+/* Button */
+.view-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #00ffcc, #4a6cf7);
+  color: #020c1b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}

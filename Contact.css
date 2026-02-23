@@ -1,0 +1,97 @@
+/* ===== Contact Section ===== */
+.about-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: radial-gradient(circle at top, #0a0a0a, #000);
+  color: #fff;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #00ffc8, #00aaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== Form Container (Glass Effect) ===== */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 16px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 
+    0 0 25px rgba(0, 255, 200, 0.15),
+    inset 0 0 15px rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: 0.4s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 0 35px rgba(0, 255, 200, 0.25),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* ===== Input Fields ===== */
+.contact-form input,
+.contact-form textarea {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 255, 200, 0.2);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+/* Focus Glow */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00ffc8;
+  box-shadow: 0 0 12px rgba(0, 255, 200, 0.6);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* ===== Button ===== */
+.contact-form button {
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(45deg, #00ffc8, #00aaff);
+  color: #000;
+  transition: 0.4s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.4);
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.8);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 25px;
+  }
+
+  .about-section h2 {
+    font-size: 28px;
+  }
+}
